@@ -63,7 +63,7 @@ def num(pin):
     if pin.isnumeric() == False:
         print(" Invalid PIN character. Correct format is: <9876>")
 
-def log_in(pin):
+def gitInput(pin):
     """
     Run Pin through full testing testing
     ARGS:
@@ -98,7 +98,7 @@ def main():
         ./Micheal_Brewer_Hw2.py
    """
     
-    log_in(pin)
+    gitInput(pin)
 
 
 if __name__=="__main__":
