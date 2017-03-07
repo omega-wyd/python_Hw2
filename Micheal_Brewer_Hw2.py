@@ -30,7 +30,8 @@ pin = input
 def check(pin):
     """
     Check the PIN of the input if it equals 1234
-    ARGS:
+    ARGS: 
+        pin -> user input
     Returns
         true or false
     """
@@ -42,9 +43,9 @@ def check(pin):
 def length(pin):
     """
     check for proper legnth of pin
-    ARGS:
+    ARGS: pin -> user input
     Return:
-        
+        None
     """
     if len(pin) != 4:
         print(" Invalid PIN lenth. Correct format is: <9876>")
@@ -55,17 +56,18 @@ def num(pin):
     """
     Check if pin is only numbers.
     ARGS:
+        pin -> user input
     Returns:
-        
+       None 
     """
     if pin.isnumeric() == False:
         print(" Invalid PIN character. Correct format is: <9876>")
 
 def log_in(pin):
     """
-    Run Pin through testing
+    Run Pin through full testing testing
     ARGS:
-        User input PIN
+        pin -> user input
     Return:
         Accept PIN or Decline
     """
@@ -89,9 +91,12 @@ def log_in(pin):
 def main():
     """
     Ask for users PIN checks for authenticity
+    Allows three attempts before ending session and locking card.
+
     USAGE:
         python3 Micheal_Brewer_Hw2.py
-    """
+        ./Micheal_Brewer_Hw2.py
+   """
     
     log_in(pin)
 
