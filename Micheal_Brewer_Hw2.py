@@ -4,8 +4,6 @@
 #
 # Copyright © 2017 student1 <student1@CS3030_87>
 #
-
-
 #===========================================================================
 #
 #       File:Micheal_Brewer_Hw2 
@@ -81,7 +79,7 @@ def log_in(pin):
         else: 
             print("Your Pin is incorrect")
             attempts = attempts + 1
-            #print(attempts)
+            #print("attempt #" attempts)    # Check that attempts is incrementing correctly
             length(pin)
             num(pin)
     print("Your bank card is blocked")
